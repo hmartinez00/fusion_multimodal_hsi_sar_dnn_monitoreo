@@ -1,0 +1,38 @@
+\section{Antecedentes y Estado del Arte}
+
+\subsection{2.1 Métodos Convencionales}
+
+Aunque los enfoques tradicionales han aportado fundamentos sólidos, sus limitaciones se vuelven evidentes cuando se enfrentan a la heterogeneidad extrema entre datos hiperespectrales y SAR. Durante décadas, la comunidad se apoyó principalmente en tres niveles de fusión: a nivel de píxel, de características y de decisión. Los métodos basados en transformaciones como PCA, IHS o wavelets lograron alinear geometrías y mejorar la resolución espacial, pero tendían a perder información espectral crítica o introducir artefactos bajo variabilidad real del terreno.
+
+Particularmente llamativo resulta el pobre rendimiento de estas técnicas en condiciones operativas reales. La sensibilidad del SAR a la rugosidad y humedad del suelo choca frontalmente con la riqueza espectral del HSI, generando desajustes que métodos lineales o basados en reglas rara vez resuelven de forma satisfactoria. En muchos casos estudiados, la fusión convencional mejoraba marginalmente la clasificación respecto al uso individual de cada sensor, pero colapsaba ante nubosidad persistente, cambios estacionales o terrenos complejos.
+
+\subsection{2.2 Redes Neuronales para Fusión Multimodal}
+
+Resulta revelador observar cómo la irrupción del aprendizaje profundo ha redefinido por completo las posibilidades de integración multimodal. Las arquitecturas convolucionales profundas primero, y posteriormente los mecanismos de atención y transformers, permitieron modelar dependencias cruzadas que escapaban a los enfoques analíticos. 
+
+\cite{Li2022Deep} ofrecen en su revisión exhaustiva una cartografía muy útil de esta evolución, clasificando los métodos en categorías que van desde fusión temprana hasta estrategias híbridas avanzadas. Dentro de este panorama, destaca especialmente el trabajo de \cite{Li2023Asymmetric}, quienes propusieron una red de fusión asimétrica específicamente diseñada para HSI y SAR. Su enfoque reconoce la distinta naturaleza de ambas modalidades y aplica extractores dedicados antes de una etapa de integración cruzada, logrando mejoras notables en precisión de clasificación respecto a fusiones simétricas convencionales. No obstante, cabe matizar que su dependencia de alineación precisa y su costo computacional siguen representando desafíos importantes.
+
+\begin{table}[h]
+\centering
+\caption{Resumen comparativo de métodos SOTA en fusión HSI-SAR}
+\label{tab:sota_methods}
+\begin{tabular}{lccc}
+\hline
+\textbf{Método} & \textbf{Año} & \textbf{Enfoque Principal} & \textbf{Ventajas / Limitaciones} \\
+\hline
+Fusión tradicional (PCA, Wavelet) & Pre-2018 & Nivel píxel/característica & Simple / Baja robustez \\
+CNN-based early fusion & 2019-2021 & Concatenación temprana & Rápida / Pierde información \\
+Li et al. Asymmetric & 2023 & Fusión asimétrica dedicada & Mejor balance / Costo alto \\
+TGF-Net (Transformer+Gist) & 2025 & Atención cruzada híbrida & Alta precisión / Complejidad \\
+Propuesta (este trabajo) & -- & Fusión multi-escala asimétrica & -- \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{2.3 Aplicaciones en Monitoreo Crítico}
+
+Lejos de ser un asunto meramente académico, la fusión HSI-SAR encuentra su mayor relevancia en escenarios donde fallar no es una opción. El monitoreo de inundaciones, evaluación de daños post-terremoto, detección temprana de plagas agrícolas o vigilancia de cambios en ecosistemas vulnerables demandan información confiable independientemente de las condiciones meteorológicas o lumínicas.
+
+En este contexto, enfoques recientes como TGF-Net \cite{Wang2025TGF} demuestran el potencial de combinar transformers con módulos CNN especializados para clasificación multimodal, alcanzando resultados prometedores en datasets complejos. Sin embargo, la mayoría de estos trabajos se centran aún en precisión offline y muestran limitaciones claras de generalización cuando se trasladan a regiones geográficas o temporadas distintas a las del entrenamiento.
+
+Tras examinar detenidamente la literatura, emergen brechas consistentes: escasa atención a la eficiencia computacional para despliegue en edge devices, limitada interpretabilidad de las decisiones de fusión y una evaluación todavía insuficiente bajo condiciones adversas reales. Estas observaciones motivan directamente la arquitectura que se detalla en la siguiente sección, la cual busca avanzar precisamente en estas direcciones abiertas.

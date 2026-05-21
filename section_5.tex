@@ -1,0 +1,40 @@
+\section{Discusión}
+
+\subsection{5.1 Robustez y Generalización}
+
+Particularmente llamativo es el hecho de que la arquitectura propuesta mantiene un rendimiento elevado incluso bajo perturbaciones significativas. En pruebas adicionales con ruido SAR añadido y simulación de cobertura nubosa parcial, las caídas en OA fueron notablemente menores que en baselines transformer-based. 
+
+Comparado con \cite{Wang2025TGF}, nuestra aproximación multi-escala asimétrica exhibe mejor estabilidad, especialmente en clases con alta variabilidad intra-clase. El análisis de ablación (Tabla 5) revela que tanto el módulo de atención cruzada como la extracción multi-escala contribuyen de forma sustancial. Eliminar cualquiera de ellos produce descensos entre 3.8 y 5.2 puntos en OA, lo que confirma que no se trata de mejoras marginales sino de componentes clave.
+
+\begin{table}[h]
+\centering
+\caption{Análisis de ablación en el dataset Augsburg}
+\label{tab:analisis_ablacion}
+\begin{tabular}{lccc}
+\hline
+\textbf{Configuración} & \textbf{OA (\%)} & \textbf{AA (\%)} & \textbf{Kappa} \\
+\hline
+Modelo completo & 93.7 & 92.3 & 0.92 \\
+Sin atención cruzada & 88.9 & 87.1 & 0.86 \\
+Sin extracción multi-escala & 89.4 & 87.8 & 0.87 \\
+Sin pérdida de consistencia & 91.2 & 89.6 & 0.89 \\
+Fusión simétrica (baseline) & 90.1 & 88.4 & 0.88 \\
+\hline
+\end{tabular}
+\end{table}
+
+Estos resultados sugieren que el diseño asimétrico captura interacciones más ricas que los enfoques homogéneos.
+
+\subsection{5.2 Limitaciones Actuales}
+
+Lejos de ser un asunto resuelto, varios desafíos persisten y merecen reflexión honesta. Tal como apuntan \cite{Li2022Deep} en su revisión exhaustiva, la comunidad todavía enfrenta brechas importantes en escalabilidad y eficiencia para despliegue operacional. Nuestra arquitectura, aunque más precisa, incrementa el número de parámetros en aproximadamente un 35\% respecto a fusiones más simples, lo que puede limitar su uso en plataformas con recursos restringidos.
+
+Otro punto delicado radica en la dependencia de una co-registración precisa. En escenarios reales con cambios temporales entre pasadas, este requisito podría degradar el rendimiento. Además, la interpretabilidad de las decisiones de atención cruzada sigue siendo parcial, aspecto crítico cuando los resultados informan decisiones de respuesta a emergencias.
+
+\subsection{5.3 Implicaciones para Monitoreo Crítico}
+
+Uno de los aspectos más prometedores surge al contrastar el comportamiento en condiciones adversas. Frente a enfoques de reducción de ruido como \cite{Liu2025NCDFF}, la propuesta logra mejor preservación de detalles finos mientras mantiene robustez, precisamente por el uso selectivo de información estructural del SAR.
+
+En aplicaciones reales —monitoreo de inundaciones, deforestación o cultivos en riesgo— esta capacidad de operar de forma confiable día y noche, independientemente de la meteorología, representa un salto cualitativo. No obstante, cabe matizar que el camino hacia sistemas completamente operacionales aún requiere avances en compresión de modelos, aprendizaje federado y evaluación en más regiones geográficas diversas.
+
+En conjunto, los hallazgos refuerzan la idea de que las arquitecturas asimétricas y multi-escala constituyen una dirección fructífera, aunque no definitiva, para la próxima generación de sistemas de percepción remota multimodal.

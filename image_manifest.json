@@ -1,0 +1,17 @@
+{
+    "fig1.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Esquema conceptual de fusión multimodal: dos cubos de datos (izquierda: cubo hiperespectral con bandas espectrales coloreadas, derecha: imagen SAR con patrones de polarización), flechas de flujo hacia un módulo central de red neuronal profunda con capas de atención cruzada y bloques de fusión, salida final como mapa de clasificación semántica de terreno. Líneas limpias, iconos técnicos minimalistas, estilo IEEE schematic."
+    },
+    "fig2.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Diagrama completo de arquitectura de fusión HSI-SAR: dos ramas paralelas de entrada (cubo hiperespectral y imagen SAR), bloques de extracción multi-escala, módulo central grande de fusión asimétrica con atención cruzada (mostrar flechas bidireccionales y cabezas de atención), bloques de decoder y salida de mapa de clasificación semántica. Flujo de izquierda a derecha, conexiones claras con líneas, iconos técnicos minimalistas de redes neuronales, estilo IEEE schematic limpio y profesional."
+    },
+    "fig3.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Comparación de mapas de clasificación semántica en grid 1x5: (1) imagen de referencia HSI/SAR fusionada falsa color, (2) Ground Truth con clases coloreadas, (3) Mapa Propuesta (este trabajo), (4) Mapa Li Asymmetric, (5) Mapa Liu NCDFF. Usar paleta de colores consistente para clases (verde, amarillo, azul, etc.), bordes nítidos entre regiones, estilo limpio y técnico IEEE, disposición horizontal equilibrada con separadores sutiles."
+    },
+    "fig4.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Diagrama de barras horizontal o radar chart comparativo del análisis de ablación: barras o ejes para Modelo completo, Sin atención cruzada, Sin multi-escala, Sin pérdida de consistencia y Baseline simétrico. Métricas OA, AA y Kappa mostradas con valores numéricos discretos junto a barras. Estilo limpio IEEE, líneas precisas, paleta de grises y azul para diferenciar configuraciones."
+    },
+    "fig5.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Diagrama resumen conceptual de conclusiones y futuro: línea temporal o diagrama de flujo que muestra evolución desde estado actual (centro) hacia direcciones futuras (derecha) con iconos de modelo ligero, edge computing, multi-temporal y mayor interpretabilidad. Flechas limpias de progreso, nodos técnicos minimalistas, estilo IEEE schematic profesional y equilibrado."
+    }
+}

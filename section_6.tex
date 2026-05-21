@@ -1,0 +1,19 @@
+\section{Conclusiones y Trabajos Futuros}
+
+\subsection{6.1 Conclusiones}
+
+Resulta revelador observar cómo una fusión inteligente entre sensores hiperespectrales y SAR puede transformar significativamente las capacidades de percepción remota en escenarios críticos. Este trabajo presentó una arquitectura basada en redes neuronales profundas que aprovecha de forma asimétrica las fortalezas complementarias de ambas modalidades mediante extracción multi-escala y mecanismos de atención cruzada.
+
+Los resultados obtenidos demuestran mejoras consistentes y relevantes frente a enfoques del estado del arte, tanto en métricas cuantitativas como en calidad visual de los mapas de clasificación. Particularmente destacable es la mayor robustez bajo condiciones adversas, donde la información estructural del SAR compensa efectivamente las limitaciones del HSI. La propuesta no solo eleva la precisión general, sino que genera salidas más coherentes espacialmente, aspecto fundamental para aplicaciones operativas.
+
+En resumen, la evidencia recopilada a lo largo de este estudio confirma que los diseños asimétricos y multi-escala representan una vía prometedora para superar las limitaciones históricas de la fusión multimodal en teledetección.
+
+\subsection{6.2 Direcciones Futuras}
+
+Lejos de ser un asunto resuelto, múltiples caminos interesantes quedan abiertos. Tal como señalan \cite{Li2022Deep} en su revisión exhaustiva, la escalabilidad y la eficiencia continúan siendo barreras importantes para el despliegue real a gran escala. En este sentido, una línea prioritaria consiste en la compresión y destilación del modelo actual hacia versiones ligeras que mantengan el rendimiento sin sacrificar demasiado la precisión.
+
+Resulta especialmente atractivo explorar extensiones de la arquitectura hacia enfoques más eficientes inspirados en propuestas híbridas como TGF-Net \cite{Wang2025TGF}. La integración de técnicas de cuantización, pruning y knowledge distillation podría permitir su implementación en plataformas edge o satélites con recursos limitados. 
+
+Otras direcciones relevantes incluyen el desarrollo de mecanismos de auto-supervisión para reducir la dependencia de etiquetas costosas, el estudio de aprendizaje continuo ante distribución cambiante de datos (domain shift) y la incorporación de información temporal mediante arquitecturas recurrentes o transformers espacio-temporales. Asimismo, sería valioso avanzar en la interpretabilidad de los módulos de atención para generar explicaciones más confiables en contextos de toma de decisiones críticas.
+
+Finalmente, se recomienda evaluar la propuesta en un mayor número de regiones geográficas y condiciones operativas reales, incluyendo experimentos con datos de sensores adicionales (LiDAR, multispectral o datos in-situ). Solo mediante esta validación exhaustiva y el refinamiento iterativo se podrá transitar de resultados prometedores en investigación hacia sistemas verdaderamente operacionales que marquen una diferencia tangible en el monitoreo ambiental y la gestión de desastres.

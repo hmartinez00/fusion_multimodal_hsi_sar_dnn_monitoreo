@@ -1,0 +1,230 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Li2022Deep}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=8bafb8b92dc7cf8ee7182830263e7ebc}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jiaxin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f2cb6caf5572328fc37ef1849ac97bef}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Danfeng},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4473d223520d273ef91c17040044603d}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Lianru},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f24142629687500e6745ae7eb5f73609}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=10f03c7900058db9a01a81e5822da5fe}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=44d73e639c535123777db68e270b754e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+        {{hash=19a50089cae8f67ab374e30b054493ad}{%
+           family={Chanussot},
+           familyi={C\bibinitperiod},
+           given={Jocelyn},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b3debb18a28632c2e85e548940b51f23}
+      \strng{fullhash}{8f2f5bf7feaa111458eae0d840a411c7}
+      \strng{fullhashraw}{8f2f5bf7feaa111458eae0d840a411c7}
+      \strng{bibnamehash}{b3debb18a28632c2e85e548940b51f23}
+      \strng{authorbibnamehash}{b3debb18a28632c2e85e548940b51f23}
+      \strng{authornamehash}{b3debb18a28632c2e85e548940b51f23}
+      \strng{authorfullhash}{8f2f5bf7feaa111458eae0d840a411c7}
+      \strng{authorfullhashraw}{8f2f5bf7feaa111458eae0d840a411c7}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Applied Earth Observation and Geoinformation}
+      \field{note}{[Online]. Available: \url{https://arxiv.org/pdf/2205.01380}}
+      \field{title}{Deep Learning in Multimodal Remote Sensing Data Fusion: A Comprehensive Review}
+      \field{volume}{112}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1016/j.jag.2022.102926
+      \endverb
+    \endentry
+    \entry{Hong2021Overview}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=f2cb6caf5572328fc37ef1849ac97bef}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Danfeng},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{d150928b75a52d6934cbe61798927da4}
+      \strng{fullhash}{d150928b75a52d6934cbe61798927da4}
+      \strng{fullhashraw}{d150928b75a52d6934cbe61798927da4}
+      \strng{bibnamehash}{d150928b75a52d6934cbe61798927da4}
+      \strng{authorbibnamehash}{d150928b75a52d6934cbe61798927da4}
+      \strng{authornamehash}{d150928b75a52d6934cbe61798927da4}
+      \strng{authorfullhash}{d150928b75a52d6934cbe61798927da4}
+      \strng{authorfullhashraw}{d150928b75a52d6934cbe61798927da4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of IGARSS}
+      \field{note}{[Online]. Available: \url{https://elib.dlr.de/146240/1/An_Overview_of_Multimodal_Remote_Sensing_Data_Fusion_From_Image_to_Feature_From_Shallow_to_Deep.pdf}}
+      \field{title}{An Overview of Multimodal Remote Sensing Data Fusion}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1109/IGARSS47720.2021.9554255
+      \endverb
+    \endentry
+    \entry{Li2023Asymmetric}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=be6f1b6df7f1ddfafad18806238fa391}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ea6b53d9a40a4dfc1c80a4158c489b09}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Yunhao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=770b397695ff4137f3692703ee19d4ae}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Mengmeng},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7b29cc5f01d86d6776ea05347f0fea80}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Ran},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bf5e5f7ed3e7b3445faf336bac2a6aef}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Qian},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{45c1e7ada08eb2d876aac8b598160b74}
+      \strng{fullhash}{7fe2fee8469e366d7ab6923e5de5f343}
+      \strng{fullhashraw}{7fe2fee8469e366d7ab6923e5de5f343}
+      \strng{bibnamehash}{7fe2fee8469e366d7ab6923e5de5f343}
+      \strng{authorbibnamehash}{7fe2fee8469e366d7ab6923e5de5f343}
+      \strng{authornamehash}{45c1e7ada08eb2d876aac8b598160b74}
+      \strng{authorfullhash}{7fe2fee8469e366d7ab6923e5de5f343}
+      \strng{authorfullhashraw}{7fe2fee8469e366d7ab6923e5de5f343}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Neural Networks and Learning Systems}
+      \field{note}{[Online]. Available: \url{https://ieeexplore.ieee.org/document/9716784}}
+      \field{number}{12}
+      \field{title}{Asymmetric Feature Fusion Network for Hyperspectral and SAR Image Classification}
+      \field{volume}{34}
+      \field{year}{2023}
+      \field{pages}{8057\bibrangedash 8070}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TNNLS.2022.3140211
+      \endverb
+    \endentry
+    \entry{Wang2025TGF}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=39856f0439f35f79a8eed8b12d26166c}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9a75ee293f2555f40976345739087998}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea52f918d04f83e834e8a851518ed476}
+      \strng{fullhash}{ea52f918d04f83e834e8a851518ed476}
+      \strng{fullhashraw}{ea52f918d04f83e834e8a851518ed476}
+      \strng{bibnamehash}{ea52f918d04f83e834e8a851518ed476}
+      \strng{authorbibnamehash}{ea52f918d04f83e834e8a851518ed476}
+      \strng{authornamehash}{ea52f918d04f83e834e8a851518ed476}
+      \strng{authorfullhash}{ea52f918d04f83e834e8a851518ed476}
+      \strng{authorfullhashraw}{ea52f918d04f83e834e8a851518ed476}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLOS ONE}
+      \field{note}{[Online]. Available: \url{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0316900}}
+      \field{title}{TGF-Net: Transformer and Gist CNN Fusion Network for Multi-modal Remote Sensing Image Classification}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0316900
+      \endverb
+    \endentry
+    \entry{Liu2025NCDFF}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=240f15f7d0b589c89d5552453f46785d}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e509e5e53b3287487b3d77bfc550fb5}
+      \strng{fullhash}{8e509e5e53b3287487b3d77bfc550fb5}
+      \strng{fullhashraw}{8e509e5e53b3287487b3d77bfc550fb5}
+      \strng{bibnamehash}{8e509e5e53b3287487b3d77bfc550fb5}
+      \strng{authorbibnamehash}{8e509e5e53b3287487b3d77bfc550fb5}
+      \strng{authornamehash}{8e509e5e53b3287487b3d77bfc550fb5}
+      \strng{authorfullhash}{8e509e5e53b3287487b3d77bfc550fb5}
+      \strng{authorfullhashraw}{8e509e5e53b3287487b3d77bfc550fb5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}
+      \field{note}{[Online]. Available: \url{https://ieeexplore.ieee.org/abstract/document/11314074}}
+      \field{title}{Multisource Noise-Reduced Diffusion Feature Fusion for Hyperspectral and SAR Image Classification}
+      \field{year}{2025}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
