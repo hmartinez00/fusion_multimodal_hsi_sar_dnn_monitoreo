@@ -40,7 +40,7 @@ Uno de los desafíos persistentes que surge al entrenar estas redes radica en eq
 
 El entrenamiento se realiza mediante AdamW con warm-up cosine annealing durante 200 epochs. Aplicamos augmentaciones fuertes específicas para datos remotos (rotaciones, flips, mixup espectral y simulación de ruido SAR). El batch size efectivo fue de 32 en dos GPUs, con gradiente clipping para estabilizar el entrenamiento de los módulos de atención.
 
-\begin{table}[h]
+\begin{table*}[h]
 \centering
 \caption{Hiperparámetros principales de la arquitectura y entrenamiento}
 \label{tab:hiperparametros}
@@ -56,6 +56,6 @@ Factor de decaimiento & 0.95 \\
 Peso de pérdida de consistencia & 0.3 \\
 \hline
 \end{tabular}
-\end{table}
+\end{table*}
 
 Esta configuración, validada mediante ablación exhaustiva, busca no solo maximizar precisión sino también mantener un equilibrio entre rendimiento y viabilidad computacional para aplicaciones de monitoreo crítico.

@@ -6,7 +6,7 @@ Particularmente llamativo es el hecho de que la arquitectura propuesta mantiene 
 
 Comparado con \cite{Wang2025TGF}, nuestra aproximación multi-escala asimétrica exhibe mejor estabilidad, especialmente en clases con alta variabilidad intra-clase. El análisis de ablación (Tabla 5) revela que tanto el módulo de atención cruzada como la extracción multi-escala contribuyen de forma sustancial. Eliminar cualquiera de ellos produce descensos entre 3.8 y 5.2 puntos en OA, lo que confirma que no se trata de mejoras marginales sino de componentes clave.
 
-\begin{table}[h]
+\begin{table*}[h]
 \centering
 \caption{Análisis de ablación en el dataset Augsburg}
 \label{tab:analisis_ablacion}
@@ -21,7 +21,7 @@ Sin pérdida de consistencia & 91.2 & 89.6 & 0.89 \\
 Fusión simétrica (baseline) & 90.1 & 88.4 & 0.88 \\
 \hline
 \end{tabular}
-\end{table}
+\end{table*}
 
 Estos resultados sugieren que el diseño asimétrico captura interacciones más ricas que los enfoques homogéneos.
 

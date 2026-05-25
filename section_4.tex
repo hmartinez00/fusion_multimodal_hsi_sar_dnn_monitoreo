@@ -12,7 +12,7 @@ Particularmente llamativo es el hecho de que la arquitectura propuesta logra mej
 
 Como se observa en la Tabla 4, el método supera claramente a la fusión asimétrica de \cite{Li2023Asymmetric} y al enfoque basado en difusión de \cite{Liu2025NCDFF}. Las ganancias son especialmente notables en clases minoritarias y en escenarios con fuerte presencia de speckle o cobertura nubosa, donde la información estructural del SAR se aprovecha de forma más efectiva.
 
-\begin{table}[h]
+\begin{table*}[h]
 \centering
 \caption{Resultados de clasificación en el dataset Augsburg (media ± std. de 5 ejecuciones)}
 \label{tab:resultados_clasificacion}
@@ -27,7 +27,7 @@ Liu et al. NCDFF \cite{Liu2025NCDFF} & 89.1 ± 0.7 & 87.4 ± 0.8 & 0.87 & 0.88 \
 \textbf{Propuesta (este trabajo)} & \textbf{93.7 ± 0.6} & \textbf{92.3 ± 0.7} & \textbf{0.92} & \textbf{0.93} \\
 \hline
 \end{tabular}
-\end{table}
+\end{table*}
 
 Las mejoras oscilan entre 4.6 y 6.1 puntos porcentuales en OA respecto a los mejores competidores. No obstante, cabe matizar que estas ganancias tienen un costo computacional moderado durante entrenamiento, aunque la inferencia se mantiene viable para aplicaciones casi en tiempo real.
 
